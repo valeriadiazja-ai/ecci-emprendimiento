@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Red de Emprendedores</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background: linear-gradient(135deg, #003366, #0055aa);
+      color: #fff;
+      padding: 20px;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    form fieldset {
+      border: none;
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #f9fbff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    legend {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .acciones {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    button {
+      background: #003366;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0055aa;
+    }
+    .acciones button[type="reset"] {
+      background: #777;
+    }
+    .acciones button[type="reset"]:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formulario Red de Emprendedores</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cedula">No. de Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+
+        <label for="celular">Número de Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+
+        <label for="vinculacion">Tipo de vinculación:</label>
+        <select id="vinculacion" name="vinculacion" required>
+          <option value="">Seleccione...</option>
+          <option>Estudiante actual</option>
+          <option>Egresado</option>
+          <option>Administrativo</option>
+          <option>Docente</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del emprendimiento</legend>
+        <label for="nombreEmprendimiento">Nombre del Emprendimiento:</label>
+        <input type="text" id="nombreEmprendimiento" name="nombreEmprendimiento" required>
+            
+        <label for="correo">Correo Empresarial:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="tipoActor">Tipo de Actor:</label>
+        <select id="tipoActor" name="tipoActor" required>
+          <option>Emprendimiento</option>
+          <option>Negocio</option>
+          <option>Empresa</option>
+        </select>
+
+        <label for="descripcion">Descripción corta:</label>
+        <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+
+        <label for="productos">Productos o servicios:</label>
+        <input type="text" id="productos" name="productos" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+          <option>Alimentos y bebidas</option>
+          <option>Moda y accesorios</option>
+          <option>Servicios creativos</option>
+          <option>Tecnología y software</option>
+          <option>Educación y formación</option>
+          <option>Bienestar y salud</option>
+          <option>Gastronomía</option>
+          <option>Servicios de ingeniería</option>
+          <option>Asesoría y consultoría</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="fechaCreacion">Fecha de creación:</label>
+        <input type="date" id="fechaCreacion" name="fechaCreacion">
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentarios</legend>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escriba sus comentarios..."></textarea>
+      </fieldset>
+
+      <div class="acciones">
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar formulario</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
