@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emprendimiento ECCI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Universidad ECCI</h1>
+      <p class="text-lg">Plataforma de Inscripción de Emprendimientos</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Impulsamos tu espíritu emprendedor</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">La Universidad ECCI fomenta el emprendimiento mediante programas de innovación, ferias, concursos y acompañamiento. Aquí puedes registrar tu iniciativa y ser parte de nuestra comunidad emprendedora.</p>
+      <div class="space-x-4">
+  <a href="#inscripcion" class="mt-6 inline-block bg-blue-800 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Inscribir mi Emprendimiento</a>
+  <a href="formulario_emprendedores.html" class="mt-6 inline-block bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600">Ir a Formulario Red de Emprendedores</a>
+</div>
+    </div>
+  </section>
+
+  <!-- Iniciativas -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Iniciativas de Emprendimiento en la Universidad ECCI</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Feria de Empleabilidad y Emprendimiento</h3>
+          <p class="text-sm text-gray-600">Un espacio clave para conectar estudiantes, egresados y empresas, generando oportunidades de negocio y empleo.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Concurso Empresario ECCI</h3>
+          <p class="text-sm text-gray-600">Reconoce los proyectos más innovadores de egresados en categorías como Startup, Innovación y Trayectoria.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Programas de Innovación y Emprendimiento</h3>
+          <p class="text-sm text-gray-600">Iniciativas para impulsar ideas innovadoras y la creación de empresas con propósito.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Emprendimiento Social</h3>
+          <p class="text-sm text-gray-600">Proyectos que buscan generar impacto positivo en la sociedad, con enfoque en comunidades vulnerables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apoyo -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">¿Cómo apoya la universidad a los emprendedores?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-6 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Conexiones y Mentores</h3>
+          <p class="text-sm text-gray-600">Acceso a aliados como Innpulsa y SENA Fondo Emprender, además de mentores expertos.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Asesoría y Recursos</h3>
+          <p class="text-sm text-gray-600">Acompañamiento en modelos de negocio, talleres y charlas inspiradoras.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Visibilización y Redes</h3>
+          <p class="text-sm text-gray-600">Espacios de networking con líderes empresariales y organizaciones sociales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participantes -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">¿Quiénes pueden participar?</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">Esta plataforma está abierta a toda la comunidad interesada en potenciar sus ideas de emprendimiento: estudiantes, egresados, docentes, directivos y población externa.</p>
+    </div>
+  </section>
+
+  <!-- Formulario de Inscripción -->
+  <section id="inscripcion" class="py-12 bg-white">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-2xl font-bold text-center mb-6">Formulario de Inscripción</h2>
+      <form class="bg-gray-100 p-8 rounded-xl shadow space-y-4">
+        <div>
+          <label class="block mb-1 font-semibold">Nombre del participante</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-lg" placeholder="Escriba su nombre completo" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Tipo de participante</label>
+          <select class="w-full px-4 py-2 border rounded-lg" required>
+            <option>Estudiante</option>
+            <option>Egresado</option>
+            <option>Docente</option>
+            <option>Directivo</option>
+            <option>Población externa</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Nombre del emprendimiento</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-lg" placeholder="Ej: Mi Startup Innovadora" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Categoría</label>
+          <select class="w-full px-4 py-2 border rounded-lg" required>
+            <option>Startup</option>
+            <option>Innovación</option>
+            <option>Trayectoria</option>
+            <option>Emprendimiento Social</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Descripción del proyecto</label>
+          <textarea class="w-full px-4 py-2 border rounded-lg" rows="4" placeholder="Describe brevemente tu idea o emprendimiento" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Enviar Inscripción</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Universidad ECCI - Innovación y Emprendimiento</p>
+    </div>
+  </footer>
+
+</body>
+</html>
